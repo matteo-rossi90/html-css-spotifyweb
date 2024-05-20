@@ -97,10 +97,8 @@ main{
 
     /* ridimensionamento componenti */
     #top-nav, #navbar, main {
-        width: calc(100% - 50px);
+        width: 100%;
         }
     
-    
-
 }
 
