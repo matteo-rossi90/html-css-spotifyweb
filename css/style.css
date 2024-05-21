@@ -227,7 +227,7 @@ main h4{
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 5px;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .film-card{
@@ -241,6 +241,17 @@ main h4{
 .round img{
     object-fit:cover;
     border-radius: 100%;
+}
+
+#movie-container > h5, 
+.film-card h5{
+    color: #A3A3A3;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.film-card h5{
+    text-align: center;
 }
 
 /* BARRA PLAYER IN BASSO */
@@ -423,7 +434,7 @@ main h4{
 
     .film-card {
         width: calc((100vw / 2) - 50px);
-        height: calc((100vw / 2));
+        /* height: calc((100vw / 2)); */
     }
     
 }
@@ -434,7 +445,7 @@ main h4{
 
     .film-card {
         width: calc((100vw / 4) - 50px);
-        height: calc((100vw / 4));
+        /* height: calc((100vw / 4)); */
     }
 }
 
