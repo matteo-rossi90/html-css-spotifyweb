@@ -11,9 +11,19 @@
     display: flex;
 }
 
-/* debug prove */
-p{
-    font-size: 20px;
+ul{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* BARRA LATERALE */
@@ -21,45 +31,135 @@ p{
 #side-nav{
     background-color:blue;
     height: calc(100vh - 80px);
-    width: 200px;
+    width: 150px;
 }
 
 /* PARTE CENTRALE */
 
 main{
-    background-color:rgb(42, 165, 44);
-    width: calc(100% - 200px);
+    background-color:#141922;
+    width: calc(100% - 150px);
     height: calc(100vh - 80px);
     overflow-y: auto;
+}
+
+main li a{
+    color: #C1C1C1;
+}
+
+main h4,
+main h2,
+#upgrade a{
+    color: white;
+    text-decoration: none;
+}
+
+main h2{
+    font-size: 20px;
+}
+
+main h4{
+    font-size: 14px;
+    text-align:center;
 }
 
 /* Barra in alto- upgrade */
 
 #top-nav {
-    background-color: rgb(226, 192, 43);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 60px;
     position: fixed;
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
+}
+
+/* pulsante uograde */
+
+#upgrade{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+#upgrade a{
+    font-size: 12px;
+}
+
+#btn-upgrade{
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: white 1px solid;
+    background-color: transparent;
 }
 
 /* contenuto */
 
 #content{
-    padding-top: 20px;
+    /* padding-top: 20px; */
     height: calc(100vh - 150px)
 }
 
 /* barra dei contenuti */
 
 #navbar{
-    background-color: violet;
+    background-color: #141922;
+    margin-top: 20px;
     height: 90px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+#list-flex{
+    display: flex;
+    align-items: flex-end;
+}
+
+#list-flex ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#list-flex li {
+    padding: 15px 10px;
+}
+
+/* anteprima film e brani musicali*/
+
+#movie-container{
+    margin: 15px;
+    
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.film-card{
+    width: calc((100vw / 6) - 40px);
+    /* height: calc((100vw / 6)); */
+    /* background-color: lightskyblue; */
+}
+
+.film-card img{
+    width: 100%
+}
+
+.round img{
+    object-fit:cover;
+    border-radius: 100%;
 }
 
 /* BARRA PLAYER IN BASSO */
 
 #bottom-bar{
-    background-color: black;
+    background-color: #282828;
     height: 80px;
     z-index: 900;
 }
@@ -72,20 +172,135 @@ main{
 
 /* parti del player */
 .col, #col-center{
-    background-color: beige;
+    /* border: 1px dashed white; */
     height: 40px;
     margin: 20px 20px;
 }
 
 .col{
     width: 25%;
+    display: flex;
+    align-content: center;
+    
 }
 
 #col-center{
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
+.box-col{
+    /* border: 1px dashed red; */
+    /* height: 40px; */
+    /* width: 50%; */
+    padding: 5px 7px;
+}
+
+#bottom-bar ul{
+    display: flex;
+}
+
+.box-col li{
+    padding: 5px 5px;
+}
+
+.box-col h5, 
+.timing,
+#widget li a{
+    color: white;
+}
+
+.box-col h6, .box-col li a{
+    color: rgb(178, 178, 178);
+}
+
+/* parte icona brano */
+
+#sinister{
+    /* border: 1px dashed red; */
+    height: 40px;
+    width: 20%;
+}
+
+#sinister img{
+    width: 40px;
+    height: 40px;
+}
+
+/* parte del player */
+.box-player{
+    /* border: 1px dashed blue; */
+    /* height: 20px; */
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-bottom: 4px;
+}
+
+/* comandi player */
+.box-player li button{
+    padding: 0 10px;
+}
+
+.fa-circle-play{
+    font-size: 20px;
+}
+
+/* dimensioni icone */
+.fa-shuffle, 
+.fa-backward-step, 
+.fa-forward-step, 
+.fa-rotate-right,
+.fa-list, 
+.fa-desktop,
+.fa-volume-high,
+.timing{
+    font-size: 10px;
+}
+
+/* barra di riproduzione brani */
+.bar{
+    height: 4px;
+    border-radius: 20px;
+}
+
+#bar-container, 
+#volume-bar{
+    background-color: #5A5A5A;
+}
+
+#bar-container{
+    width: 80%;
+    margin: 5px;
+}
+
+#bar-content, #volume-content{
+    background-color: #C1C1C1;
+    width: 25%;
+}
+
+/* barra comandi laterali e volume */
+
+#widget{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    width: 100%;
+}
+
+#widget li a{
+    padding: 0 6px;
+}
+
+#volume-bar {
+    width: 40%;
+}
+
+
 /* SEZIONE RESPONSIVE */
+
+/* visualizzazione mobile */
 
 @media all and (max-width: 553px) {
     
@@ -96,9 +311,43 @@ main{
     }
 
     /* ridimensionamento componenti */
-    #top-nav, #navbar, main {
+    #navbar, main {
         width: 100%;
-        }
+    }
+
+    #top-nav{
+        width: calc(100% - 50px);
+    }
+
+    .film-card {
+        width: calc((100vw / 2) - 50px);
+        height: calc((100vw / 2));
+    }
     
 }
+
+/* visualizzazione tablet */
+
+@media all and (min-width: 554px) and (max-width: 735px) {
+
+    /* #navbar { */
+        /* height: 130px; */
+    /* } */
+
+    .film-card {
+        width: calc((100vw / 4) - 50px);
+        height: calc((100vw / 4));
+    }
+}
+
+/*  */
+
+@media all and (max-width: 735px) {
+
+    #navbar {
+        height: 130px;
+    }
+}
+
+
 
