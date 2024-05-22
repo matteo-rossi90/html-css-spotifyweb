@@ -45,8 +45,12 @@
     border-left: 3px solid #ADFF2F;
 }
 
-li.active a img{
+#home img{
     filter: invert(0)
+}
+
+#home span{
+    color:white;
 }
 
 /* hover delle anteprime */
@@ -82,7 +86,7 @@ li.active a img{
     background-color: #C1C1C1;
     position: absolute;
     left: 100%;
-    transform: translate(-40%, -40%);
+    transform: translate(-50%, -40%);
     display: none;
     cursor: pointer;
 

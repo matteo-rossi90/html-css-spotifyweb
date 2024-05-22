@@ -52,7 +52,7 @@ h2,
 
 #side-nav{
     background-color:rgb(0, 0, 0);
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
     width: 150px;
 }
 
@@ -167,7 +167,7 @@ h2,
 main{
     background-color:#141922;
     width: calc(100% - 150px);
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
     overflow-y: auto;
 }
 
@@ -191,6 +191,7 @@ main h4{
     height: 60px;
     position: fixed;
     width: calc(100% - 150px);
+    z-index: 900;
 }
 
 /* pulsante upgrade */
