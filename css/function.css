@@ -1,5 +1,7 @@
 /* FUNZIONI E INTERAZIONI */
 
+/* hover oggetti */
+
 .list li:hover:not(.active) a,
 .list li:hover:not(.active) span,
 #create-playlist:hover span,
@@ -22,6 +24,12 @@
 
 #create-playlist:hover #square{
     background-color: white;
+}
+
+/* hover nome autore del brano in riproduzione */
+
+#name:hover a{
+    text-decoration: underline
 }
 
 /* interazione pulsanti */

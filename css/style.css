@@ -15,7 +15,8 @@ ul{
     list-style-type: none;
 }
 
-ul li a{
+ul li a,
+#name a{
     text-decoration: none;
 }
 
@@ -244,17 +245,11 @@ main h4{
     padding: 15px 10px;
 }
 
-#list-flex li hr{
+#focus {
     width: 30%;
     border-bottom: 3px solid #ADFF2F;
     margin: 0 30px;
 }
-
-/* hr#focused{ */
-    /* border-left: 3px solid yellow; */
-    /* height: 20px; */
-/*  */
-/* } */
 
 /* anteprima brani musicali*/
 
@@ -345,12 +340,12 @@ main h4{
     color: white;
 }
 
-
-.box-col h6, 
+#name a,
 .box-col li a,
 #widget li a{
     color: rgb(178, 178, 178);
 }
+
 
 /* parte icona brano */
 
@@ -465,21 +460,20 @@ main h4{
     .list h4,
     #download span,
     #user span,
-    hr#divide {
-        display: none;
-    }
-
     #square,
     #create-playlist span,
-    #play-list li a{
-        display:none;
+    #play-list li a,
+    hr {
+        display: none;
     }
 
     #create-playlist{
         height: 64px;
     }
 
-
+    .active{
+        border-left: none;
+    }
 
     /* ridimensionamento componenti */
     #navbar, main {
@@ -492,22 +486,20 @@ main h4{
 
     .play-card {
         width: calc((100vw / 2) - 50px);
-        /* height: calc((100vw / 2)); */
     }
     
 }
 
 /* visualizzazione tablet */
 
-@media all and (min-width: 554px) and (max-width: 735px) {
+@media all and (min-width: 554px) and (max-width: 879px) {
 
     .play-card {
         width: calc((100vw / 4) - 50px);
-        /* height: calc((100vw / 4)); */
     }
 }
 
-/*  */
+/* Allargamento barra opzioni in alto */
 
 @media all and (max-width: 735px) {
 
