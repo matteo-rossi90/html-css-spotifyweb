@@ -159,9 +159,6 @@ h2,
     color: white;
 }
 
-
-
-
 /* PARTE CENTRALE */
 
 main{
@@ -488,6 +485,35 @@ main h4{
     .play-card {
         width: calc((100vw / 2) - 50px);
     }
+
+    #col-center{
+        width: 30%;
+    }
+
+    #sinister img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .box-col h5,
+    .box-col h6{
+        font-size: 7px;
+    }
+
+    .fa-heart,
+    .fa-folder{
+        display: block;
+        font-size: 12px;
+    }
+
+    .fa-list,
+    .fa-desktop,
+    .fa-volume-high{
+        display: block;
+        font-size: 8px;
+    }
+
+
     
 }
 
@@ -497,6 +523,10 @@ main h4{
 
     .play-card {
         width: calc((100vw / 4) - 50px);
+    }
+
+    #volume-bar {
+        width: 80%;
     }
 }
 
