@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+    <!-- file function -->
+    <link rel="stylesheet" href="css/function.css">
+
     <!-- file css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
@@ -41,14 +44,14 @@
             </div>
 
 
-            <div class="menu-container">
+            <!-- <div class="menu-container"> -->
 
                 <!-- lista ricerca e preferiti -->
-                <div class="list">
+                <div class="list" id="choose">
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="#">
-                                <img src="img/home.svg" alt="">
+                                <img src="img/home.svg" alt="Home">
                             </a>
                             <span>
                                 Home
@@ -58,22 +61,22 @@
                             <a href="#">
                                 <img src="img/search.svg" alt="cerca">
                             </a>
-                                <span>
-                                    Cerca
-                                </span>
+                            <span>
+                                Cerca
+                            </span>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/libreria.svg" alt="preferiti">
                             </a>
-                                <span>
-                                    La mia libreria
-                                </span>
+                            <span>
+                                La mia libreria
+                            </span>
                         </li>
                     </ul>
                 </div>
 
-            </div>
+            <!-- </div> -->
 
             <div class="menu-container">
 
@@ -134,7 +137,7 @@
 
             </div>
 
-            <div class="menu-container" id="sidebox">
+            <div class="menu-container">
 
                 <!-- parte contenente informazioni e utente -->
                 <div class="flex">
@@ -153,7 +156,7 @@
                 
                 </div>
 
-                <hr>
+                <hr id="divide">
 
                 <div class="flex">
                 
@@ -166,7 +169,6 @@
                         </span>
                 
                     </div>
-                
                 
                 
                 </div>
@@ -186,11 +188,13 @@
 
                 <!-- pulsante upgrade -->
                 <div id="upgrade">
-                    <a id="btn-upgrade" href="#">
-                        <span>
-                            Effettua l'upgrade
-                        </span>
-                    </a>
+                    <div id="btn-upgrade">
+                        <a href="#">
+                            <span>
+                                EFFETTUA L'UPGRADE
+                            </span>
+                        </a>
+                    </div>
                 </div>
 
             </nav>
@@ -202,6 +206,7 @@
                         <ul>
                             <li>
                                 <a href="#">IN EVIDENZA</a>
+                                <hr>
                             </li>
                             <li>
                                 <a href="#">PODCAST</a>
@@ -213,7 +218,7 @@
                                 <a href="#">GENERI E MOOD</a>
                             </li>
                             <li>
-                                <a href="#">NUOVE USCITE</a>
+                                <a href="#">NUOVE USCITE</a
                             </li>
                             <li>
                                 <a href="#">SCOPRI</a>
@@ -229,14 +234,20 @@
                     <h2>Recently played</h2>
         
                     <div class="row">
-                        <div class="film-card">
-                            <img src="img/metal_lifting.jpg" alt="metal lifting">
+                        <div class="play-card">
+                            <div class="play">
+                                <img class="color" src="img/metal_lifting.jpg" alt="metal lifting">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Heavy metal</h4>
                             <h5>subtitle</h5>
                         </div>
                         
-                        <div class="film-card">
-                            <img src="img/stranger.jpeg" alt="stranger things">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/stranger.jpeg" alt="stranger things">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>
                                 Stranger Things, Vol. 1 
                                 (a Netflix Original Series Soundtrack)
@@ -244,26 +255,38 @@
                             <h5>Kyle Dixon e Micheal Stein</h5>
                         </div>
 
-                        <div class="film-card">
-                            <img src="img/aquietplace.jpeg" alt="quiet place">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/aquietplace.jpeg" alt="quiet place">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>A quite Place</h4>
                             <h5>Subtitle</h5>
                         </div>
 
-                        <div class="film-card">
-                            <img src="img/split.jpeg" alt="split">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/split.jpeg" alt="split">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Split</h4>
                             <h5>Subtitle</h5>
                         </div>
 
-                        <div class="film-card">
-                            <img src="img/cure.jpeg" alt="cure">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/cure.jpeg" alt="cure">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>A cure of wellness</h4>
                             <h5>Subtitle</h5>
                         </div>
 
-                        <div class="film-card">
-                            <img src="img/sinister.jpeg" alt="sinister">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/sinister.jpeg" alt="sinister">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Sinister</h4>
                             <h5>Subtitle</h5>
                         </div>
@@ -275,13 +298,19 @@
                     <h2>Creato per John Doe</h2>
                     <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
                     <div class="row">
-                        <div class="film-card">
-                            <img src="img/radar.jpeg" alt="radar">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/radar.jpeg" alt="radar">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Release radar</h4>
                         </div>
                     
-                        <div class="film-card">
-                            <img src="img/mixdaily.jpeg" alt="mixdaily">
+                        <div class="play-card">
+                            <div class="play">
+                                <img src="img/mixdaily.jpeg" alt="mixdaily">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Daily Mix</h4>
                         </div>       
                                         
@@ -291,14 +320,20 @@
                     <h2>Artisti più popolari</h2>
                     <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
                     <div class="row">
-                        <div class="film-card round">
-                            <img src="img/youg.jpeg" alt="Lana del Rey - Youg">
+                        <div class="play-card round">
+                            <div class="play">
+                                <img src="img/youg.jpeg" alt="Lana del Rey - Youg">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Lana del Rey</h4>
                 
                         </div>
                     
-                        <div class="film-card round">
-                            <img src="img/einaudi.jpeg" alt="Luigi Einaudi">
+                        <div class="play-card round">
+                            <div class="play">
+                                <img src="img/einaudi.jpeg" alt="Luigi Einaudi">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
                             <h4>Ludovico Einaudi</h4>
                         </div>
                     
@@ -392,7 +427,12 @@
                         </span>
                     </div>
                     <div class="bar" id="bar-container">
-                        <div class="bar" id="bar-content"></div>
+                        <div class="bar" id="bar-content">
+
+                            <!-- cursore player -->
+                            <div class="cursor"></div>
+                            
+                        </div>
                     </div>
                     <div class="timing">
                         <span>
@@ -428,7 +468,12 @@
                     <!-- barra volume -->
                 
                     <div class="bar" id="volume-bar">
-                        <div class="bar" id="volume-content"></div>
+                        <div class="bar" id="volume-content">
+
+                            <!-- cursore volume -->
+                            <div class="cursor"></div>
+
+                        </div>
                     </div>
                 </div>
             </div>
